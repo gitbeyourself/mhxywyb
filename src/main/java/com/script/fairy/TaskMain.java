@@ -33,7 +33,7 @@ public class TaskMain {
      public  TaskMain (AtFairyImpl ATFairy) throws Exception {
          mFairy = ATFairy;
          mFairy.setGameName("梦幻西游网页版");
-         mFairy.setGameVersion(275);
+         mFairy.setGameVersion(280);
          init();
          gameUtil = new GameUtil(mFairy);
          teamTask=new TeamTask(mFairy);

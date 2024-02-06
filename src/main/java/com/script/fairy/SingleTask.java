@@ -315,6 +315,8 @@ public class SingleTask  extends TaskContent {
                 }
             }
             public void content_2() throws Exception {
+                if (overtime(50, 0)) return;
+
                 result = mFairy.findPic(new String[]{"Free Admission.png","Free Admission2.png","fubencd.png"});
                 mFairy.onTap(0.8f, result, "免费扫荡", 2000);
 
@@ -939,9 +941,8 @@ public class SingleTask  extends TaskContent {
 
             }
             public void content_1() throws Exception {
-                result = mFairy.findPic(5,1032,326,1162,"activity2.png");
+                result = mFairy.findPic(11,1046,708,1145,"activity2.png");
                 if (result.sim > 0.8f) {
-
                 }else{
                     result = mFairy.findPic(new String[]{"guaji.png","Hang up.png"});
                     mFairy.onTap(0.8f, result, "挂机页面", 2000);
@@ -950,7 +951,7 @@ public class SingleTask  extends TaskContent {
                 result = mFairy.findPic(3,303,107,730,"daily.png");
                 mFairy.onTap(0.8f, result, "日常", 2000);
 
-                result1 = mFairy.findPic(5,1032,326,1162,"activity2.png");
+                result1 = mFairy.findPic(9,1045,713,1153,"activity2.png");
                 result = mFairy.findPic(new String[]{"zhaohui.png", "zhaohui2.png"});
                 mFairy.onTap(0.8f, result, "一键找回", 2000);
                 if (result.sim < 0.8f && result1.sim > 0.8f) {
@@ -1149,13 +1150,16 @@ public class SingleTask  extends TaskContent {
                // mFairy.onTap(0.8f, result, 641,1025,664,1047,"退出", 2000);
                 if(result.sim > 0.8f){
 
+                    result = mFairy.findPic(209,972,705,1100,"fh.png");
+                    mFairy.onTap(0.8f, result, "返回", 2000);
+
                     setTaskName(2);return;
                 }
             }
             public void content_2() throws Exception {
                 if (overtime(6,3))return;
                 mFairy.sleep(1500);
-                result = mFairy.findPic(new String[]{"Main city.png","Main city2.png"});
+                result = mFairy.findPic(5,1142,714,1264,new String[]{"Main city.png","Main city2.png"});
                 mFairy.onTap(0.8f, result, "主城页面", 2000);
 
                 result = mFairy.findPic("Shopping Mall.png");
@@ -1273,7 +1277,7 @@ public class SingleTask  extends TaskContent {
                 result = mFairy.findPic("guaji2.png");
                 mFairy.onTap(0.8f, result, "挂机页面", 2000);
 
-                result = mFairy.findPic(5,301,87,643,new String[]{"thread1.png","thread2.png","thread3.png"});
+                result = mFairy.findPic(5,330,111,949,new String[]{"thread1.png","thread2.png","thread3.png"});
                 mFairy.onTap(0.8f, result, "主线奖励", 2000);
 
                 result = mFairy.findPic(408,151,676,365,"zhuxianlingqu.png");
@@ -1297,7 +1301,7 @@ public class SingleTask  extends TaskContent {
                 result = mFairy.findPic("guaji2.png");
                 mFairy.onTap(0.8f, result, "挂机页面", 2000);
 
-                result = mFairy.findPic(5,299,79,583,"zhuxian.png");
+                result = mFairy.findPic(5,330,111,949,"zhuxian.png");
                 mFairy.onTap(0.8f, result, "主线", 2000);
 
                 result = mFairy.findPic(10,1027,706,1147,"cj1.png");

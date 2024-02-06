@@ -212,8 +212,8 @@ public class GameUtil extends TaskContent {
                         return;
                     }
                 }
-                mFairy.taskSlid(err, new int[]{0, 2, 4, 6 , 8}, 0, 323,776, 323,315, 2500, 2000);
-                if (overtime(10, 0)) return;//计次并跳转
+                mFairy.taskSlid(err, new int[]{0, 2, 4, 6 , 8, 10,12,14,16}, 0, 323,776, 323,315, 2500, 2000);
+                if (overtime(18, 0)) return;//计次并跳转
             }
         }.taskContent(mFairy, "找任务中");
         return tastState;
@@ -316,8 +316,8 @@ public class GameUtil extends TaskContent {
                         return;
                     }
                 }
-                mFairy.taskSlid(err, new int[]{0, 2, 4, 6 , 8}, 0, 323,776, 323,315, 2500, 2000);
-                if (overtime(10, 0)) return;//计次并跳转
+                mFairy.taskSlid(err, new int[]{0, 2, 4, 6 , 8, 10,12,14,16}, 0, 323,776, 323,315, 2500, 2000);
+                if (overtime(18, 0)) return;//计次并跳转
             }
         }.taskContent(mFairy, "找任务中");
         return tastState;
